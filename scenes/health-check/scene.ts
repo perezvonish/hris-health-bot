@@ -13,10 +13,10 @@ const fastingKb = Markup.keyboard([
 ]).oneTime().resize();
 
 const activityKb = Markup.keyboard([
-    ["почти 0"],
-    ["мало (дорога/быт)"],
-    ["нормальная (5к+ шагов/спорт)"],
-    ["перегрузка"],
+    ["Не было"],
+    ["Мало (дорога/быт)"],
+    ["Средне (5к+ шагов/спорт)"],
+    ["Сверх нормы"],
 ]).oneTime().resize();
 
 function multiKeyboard(options: string[], selected: string[]) {
@@ -129,7 +129,7 @@ healthCheckScene.on("text", async (ctx, next) => {
         ctx.session.answers.workedToday = ctx.message.text;
         ctx.session.step = 3;
 
-        return ctx.reply("Менструация?", yesNo);
+        return ctx.reply("Была менструация?", yesNo);
     }
 
     if (step === 3) {
