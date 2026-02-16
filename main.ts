@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import {Scenes, session, Telegraf} from "telegraf";
-import type {HealthCheckContext, HealthCheckSession} from "./scenes/health-check/session.ts";
-import {healthCheckScene} from "./scenes/health-check/scene.ts";
+import type {HealthCheckContext} from "./scenes/health-check/session.ts";
+import {healthCheckScene} from "./scenes/health-check/scene.js";
 
 
 dotenv.config();
