@@ -1,0 +1,33 @@
+{
+  "name": "hris-health-bot",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/perezvonish/hris-health-bot#readme",
+  "bugs": {
+    "url": "https://github.com/perezvonish/hris-health-bot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perezvonish/hris-health-bot.git"
+  },
+  "license": "ISC",
+  "author": "perezvonish",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon main.ts",
+    "build": "tsc",
+    "start": "npm run build && node dist/main.js"
+  },
+  "dependencies": {
+    "@telegraf/session": "^2.0.0-beta.7",
+    "dotenv": "^17.3.1",
+    "telegraf": "^4.16.3",
+    "telegram-keyboard": "^2.3.5",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2"
+  }
+}
